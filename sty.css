@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Main Page Styles */
+  .main-content {
+    text-align: center;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* About Us Page Styles */
+  .about-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Coffee Menu Page Styles */
+  .coffee-menu-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Modal Styles */
+  .modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .navbar ul li a i {
+    margin-right: 5px;
+  }
+  /* Signup and Login Styles */
+
+.signup-content,
+.login-content {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.signup-content h2,
+.login-content h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.signup-content form,
+.login-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-content input,
+.login-content input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.signup-content button,
+.login-content button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.signup-content p,
+.login-content p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.signup-content p a,
+.login-content p a {
+  color: #333;
+}
+
+.signup-content p a:hover,
+.login-content p a:hover {
+  text-decoration: underline;
+}
+
+/* Adjust Modal Styles */
+
+.signup-content,
+.login-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Additional styles for the close button (optional) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #666;
+}
+
+#map {
+    height: 700px;
+    width: 100%;
+  }
+  
+#coffeeMenuModal {
+    display: none;
+  } 

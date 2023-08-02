@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styss.css">
+    <link rel="shortcut icon" href="./ima/fav.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffeemenu.html">Coffee Menu</a></li>
+                <li><a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="modal-bg">
+            <div class="signup-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2>Sign Up</h2>
+                <form action="#" method="post" onsubmit="return validateSignup()">
+                    <input type="text" placeholder="Username" id="signupUsername" required>
+                    <input type="email" placeholder="Email" id="signupEmail" required>
+                    <input type="password" placeholder="Password" id="signupPassword" required>
+                    <input type="password" placeholder="Confirm Password" id="signupConfirmPassword" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="./ima/fav.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu - Coffee Shop</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffeemenu.html">Coffee Menu</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><a href="signup.html" onclick="openSignupModal();"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="login.html" onclick="openLoginModal();"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Coffee Menu Content -->
+        <div class="coffee-menu-content">
+            <h2>Coffee Menu</h2>
+            <ul class="coffee-items">
+                <li>
+                    <img src="coffee1.jpg" alt="Coffee 1">
+                    <h3>Coffee 1</h3>
+                    <p>Price: $2.99</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Coffee 1', 2.99)">Add to Cart</button>
+                </li>
+                <li>
+                    <img src="coffee2.jpg" alt="Coffee 2">
+                    <h3>Coffee 2</h3>
+                    <p>Price: $3.49</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Coffee 2', 3.49)">Add to Cart</button>
+                </li>
+                <!-- Add more coffee items here -->
+                <!-- Example: -->
+                <!-- <li>
+                    <img src="coffee3.jpg" alt="Coffee 3">
+                    <h3>Coffee 3</h3>
+                    <p>Price: $4.99</p>
+                </li> -->
+            </ul>
+            <ul class="coffee-items 2">
+                <li>
+                    <img src="./images/espre.jpeg" alt="espre">
+                    <h3>Coffee 1</h3>
+                    <p>Price: $2.99</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Coffee 1', 2.99)">Add to Cart</button>
+                </li>
+                <li>
+                    <img src="./images/clod.jpeg" alt="clod">
+                    <h3>Coffee 2</h3>
+                    <p>Price: $3.49</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </li>
+                <!-- Add more coffee items here -->
+                <!-- Example: -->
+                <!-- <li>
+                    <img src="coffee3.jpg" alt="Coffee 3">
+                    <h3>Coffee 3</h3>
+                    <p>Price: $4.99</p>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Signup Modal -->
+    <div class="modal-bg" id="signupModal">
+        <!-- Modal content for signup -->
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal-bg" id="loginModal">
+        <!-- Modal content for login -->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
